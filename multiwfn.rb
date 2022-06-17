@@ -4,7 +4,7 @@ class Multiwfn < Formula
   head "https://github.com/kjelljorner/multiwfn-mac-build.git", branch: "source_dist"
   license :cannot_represent
 
-  desc "A copy of settings.ini is installed, to use it, set environment variable Multiwfnpath=${HOMEBREW_PREFIX}/etc/multiwfn to use it."
+  desc "A copy of settings.ini is installed. To use it, set environment variable Multiwfnpath=${HOMEBREW_PREFIX}/etc/multiwfn."
 
   option "with-openmp", "Builds with OpenMP support."
 

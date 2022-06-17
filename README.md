@@ -13,3 +13,5 @@ To add OpenMP support, use instead
 ```
 brew install --HEAD kjelljorner/multiwfn/multiwfn --with-openmp
 ```
+
+A copy of settings.ini is installed. To use it, set environment variable Multiwfnpath=${HOMEBREW_PREFIX}/etc/multiwfn.
