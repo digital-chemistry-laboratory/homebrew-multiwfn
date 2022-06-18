@@ -11,6 +11,7 @@ brew install --HEAD kjelljorner/multiwfn/multiwfn
 To add OpenMP support, use instead
 
 ```
+brew tap kjelljorner/multiwfn
 brew install --HEAD kjelljorner/multiwfn/multiwfn --with-openmp
 ```
 
