@@ -12,7 +12,7 @@ To add OpenMP support, use instead
 
 ```
 brew tap kjelljorner/multiwfn
-brew install --HEAD kjelljorner/multiwfn/multiwfn --with-openmp
+brew install --HEAD multiwfn --with-openmp
 ```
 
 To upgrade to the latest version, run `brew upgrade multiwfn`
