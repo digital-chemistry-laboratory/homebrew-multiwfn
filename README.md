@@ -5,13 +5,13 @@ A homebrew formula for Multiwfn.
 You can install `multiwfn` with the following command. It can take quite a while to compile.
 
 ```
-brew install --HEAD kjelljorner/multiwfn/multiwfn
+brew install --HEAD digital-chemistry-laboratory/multiwfn/multiwfn
 ```
 
 To add OpenMP support, use instead
 
 ```
-brew tap kjelljorner/multiwfn
+brew tap digital-chemistry-laboratory/multiwfn
 brew install --HEAD multiwfn --with-openmp
 ```
 
