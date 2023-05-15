@@ -1,7 +1,7 @@
 class Multiwfn < Formula
   desc "A Multifunctional Wavefunction Analyzer"
   homepage "http://sobereva.com/multiwfn/"
-  head "https://github.com/kjelljorner/multiwfn-mac-build.git", branch: "source_dist"
+  head "https://github.com/digital-chemistry-laboratory/multiwfn-mac-build.git", branch: "source_dist"
   license :cannot_represent
 
   desc "A copy of settings.ini is installed. To use it, set environment variable Multiwfnpath=${HOMEBREW_PREFIX}/etc/multiwfn."
