@@ -11,6 +11,8 @@ class Multiwfn < Formula
   depends_on "cmake" => :build
   depends_on "gcc"
   depends_on "openblas"
+  depends_on "arb"
+  depends_on "flint"
 
   def install
     cmake_args = std_cmake_args
