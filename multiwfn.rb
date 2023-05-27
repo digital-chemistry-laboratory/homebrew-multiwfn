@@ -13,6 +13,7 @@ class Multiwfn < Formula
   depends_on "openblas"
   depends_on "arb"
   depends_on "flint"
+  fails_with :clang
 
   def install
     cmake_args = std_cmake_args
