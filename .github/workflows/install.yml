@@ -1,0 +1,20 @@
+name: install
+
+on: 
+  workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  install:
+    runs-on: macos-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Install
+      run: |
+        brew tap digital-chemistry-laboratory/multiwfn
+        brew install --HEAD multiwfn --with-openmp
