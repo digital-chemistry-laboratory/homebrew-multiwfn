@@ -9,9 +9,9 @@ class Multiwfn < Formula
   option "with-openmp", "Builds with OpenMP support."
 
   depends_on "cmake" => :build
+  depends_on "pkg-config" => :build
   depends_on "gcc"
   depends_on "openblas"
-  depends_on "arb"
   depends_on "flint"
   fails_with :clang
 
