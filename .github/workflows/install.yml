@@ -12,9 +12,8 @@ jobs:
     runs-on: macos-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Install
       run: |
-        brew tap digital-chemistry-laboratory/multiwfn
-        brew install --HEAD multiwfn --with-openmp
+        brew install --HEAD multiwfn.rb --with-openmp --verbose
