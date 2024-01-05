@@ -16,4 +16,4 @@ jobs:
 
     - name: Install
       run: |
-        brew install --HEAD multiwfn.rb --with-openmp --verbose
+        brew install --formula --HEAD multiwfn.rb --with-openmp --verbose
