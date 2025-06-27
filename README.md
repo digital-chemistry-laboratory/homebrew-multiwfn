@@ -15,6 +15,6 @@ brew tap digital-chemistry-laboratory/multiwfn
 brew install --HEAD multiwfn --with-openmp
 ```
 
-To upgrade to the latest version, run `brew upgrade multiwfn --fetch-HEAD`
+To upgrade to the latest version, run `brew upgrade multiwfn --fetch-HEAD` (include `--with-openmp`if you previously installed with OpenMP support).
 
 A copy of settings.ini is installed. To use it, set environment variable `Multiwfnpath=${HOMEBREW_PREFIX}/etc/multiwfn`. If you want to keep the config file between upgrades, copy it to for example `~/.config/multiwfn/` and point `Multiwfnpath` there instead.
