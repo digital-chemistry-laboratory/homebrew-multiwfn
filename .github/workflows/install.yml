@@ -20,7 +20,7 @@ jobs:
       uses: Homebrew/actions/setup-homebrew@main
     - name: Install
       run: |
-        HOMEBREW_NO_INSTALL_FROM_API=1 brew install --build-from-source --verbose --HEAD multiwfn --with-openmp multiwfn
+        HOMEBREW_NO_INSTALL_FROM_API=1 brew install --build-from-source --verbose --HEAD --with-openmp multiwfn
     - name: Test
       run: |
         brew test multiwfn --verbose
