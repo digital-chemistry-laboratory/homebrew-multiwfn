@@ -18,4 +18,5 @@ jobs:
 
     - name: Install
       run: |
-        HOMEBREW_NO_INSTALL_FROM_API=1 brew install --formula --HEAD multiwfn.rb --with-openmp --verbose
+        brew tap create 
+        brew install --formula --HEAD ./multiwfn.rb --with-openmp --verbose
