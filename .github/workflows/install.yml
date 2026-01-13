@@ -18,12 +18,9 @@ jobs:
     - name: Set up Homebrew
       id: set-up-homebrew
       uses: Homebrew/actions/setup-homebrew@main
-    - name: Tap this repo (PR checkout)
+    - name: Install
       run: |
-        brew tap digital-chemistry-laboratory/multiwfn "$GITHUB_WORKSPACE"
-    - name: Install HEAD from this tap
-      run: |
-        brew install --HEAD multiwfn --with-openmp --verbose
+        HOMEBREW_NO_INSTALL_FROM_API=1 brew install --build-from-source --verbose --HEAD multiwfn --with-openmp multiwfn
     - name: Test
       run: |
         brew test multiwfn --verbose
