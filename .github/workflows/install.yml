@@ -15,7 +15,12 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
-
+    - name: Set up Homebrew
+      id: set-up-homebrew
+      uses: Homebrew/actions/setup-homebrew@main
     - name: Install
       run: |
-        brew install --formula --HEAD multiwfn.rb --with-openmp --verbose
+        HOMEBREW_NO_INSTALL_FROM_API=1 brew install --build-from-source --verbose --HEAD --with-openmp multiwfn
+    - name: Test
+      run: |
+        brew test multiwfn --verbose
