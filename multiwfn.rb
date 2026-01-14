@@ -24,6 +24,6 @@ class Multiwfn < Formula
   end
 
   test do
-    system "expect", "-c", "'spawn multiwfn; send \\003;'"
+    system "expect", "-c", "spawn multiwfn; send \\003;"
   end
 end
