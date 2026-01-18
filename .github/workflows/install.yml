@@ -12,6 +12,8 @@ on:
 jobs:
   install:
     runs-on: macos-latest
+    env:
+      HOMEBREW_NO_INSTALL_FROM_API: 1
     steps:
     - name: Checkout
       uses: actions/checkout@v4
@@ -20,7 +22,7 @@ jobs:
       uses: Homebrew/actions/setup-homebrew@main
     - name: Install
       run: |
-        HOMEBREW_NO_INSTALL_FROM_API=1 brew install --build-from-source --verbose --HEAD --with-openmp multiwfn
+        brew install --build-from-source --verbose --HEAD --with-openmp multiwfn
     - name: Test
       run: |
         brew test multiwfn --verbose
